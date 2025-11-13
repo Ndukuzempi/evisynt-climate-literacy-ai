@@ -1,0 +1,54 @@
+data_extraction_prompt_for_interventions = """
+You are an AI assistant specializing in identifying and classifying content related to **Sustainable Development Goal 13 (Climate Action)** — specifically targets 13.3.
+Your task is to follow the instructions as listed below:
+
+If the text **does not reference any climate change–related concepts or ideas **, mark it as **NOT RELATED TO CLIMATE CHANGE**.
+
+---
+
+Document:
+<document>
+{document}
+</document>
+
+Chunk to analyze:
+<chunk>
+{chunk}
+</chunk>
+
+---
+
+Instructions:
+1. Read the entire document carefully.
+2. Produce a detailed summary organised under the following headings:
+    - Context & Setting: Where the work takes place (region e.g. (Mpumalanga, uMkhanyakude District Municipality), communities, ecosystems, timeframe).
+    - Specific country: The country where this work has taken place (e.g., South Africa, India, USA).
+    - Population / Stakeholders: Who is affected or involved (e.g., local communities, schools, government agencies).
+    - Interventions or Actions: Specific climate-related interventions such as:
+      Mitigation (e.g., reducing greenhouse gas emissions),
+      Adaptation (e.g., preparing for climate impacts),
+      Ecosystem-based solutions (tree planting, wetland restoration, coastal conservation),
+      or Awareness & Education Efforts.
+    - Outcomes & Impacts: Quantitative or qualitative impacts—include numbers if mentioned (e.g., number of trees planted, training sessions held, policy changes).
+    - Links to SDG Targets: Explicit or implied alignment with SDG 13.3.
+3. Write the summary as neutral factual prose, NOT bullet points.
+4. For dates, Paraphrase for clarity but do not invent dates or targets.
+5. If no specific date is mentioned, indicate it as "Not specified"
+
+{{
+  "summary": "<Use the detailed summary to populate this section or if not related to climate change output 'NOT RELATED TO CLIMATE CHANGE'>",
+  "community": "<Who or what is affected? e.g., South African communities, ecosystems, schools>",
+  "project_name: "<What is the name of the project? e.g. Green Roots Initiative, Trees for Tomorrow, Urban Canopy Project, Blue Coast Guardians, Wetlands for Wildlife>",
+  "time_frame": "<When the project started, when it is planned to end, or any deadlines mentioned.>",
+  "future_goals": "<Any objectives, targets, or milestones the project aims to achieve in the future.>",
+  "intervention": "<What action / intervention is described? e.g., tree planting, workshops, curriculum development>",
+  "outcome": "<What is achieved or changed? e.g., increased awareness, restored wetlands, reduced emissions.>",
+  "impact": "<Impacts explicitly mentioned in the text — can be numerical (e.g., '5000 trees planted') or qualitative (e.g., 'improved community knowledge.')>",
+  "sdg_13_3":"<If the intervention aligns with SDG 13.3, answer YES or NO and add a reason.>",
+  "sa_project": "<If this is a South African initiative output YES otherwise NO.>",
+  "climate_related": "<If this is a climate change related, output YES otherwise NO.>"
+}}
+
+Only return the JSON object — no explanation, no extra commentary.
+
+"""

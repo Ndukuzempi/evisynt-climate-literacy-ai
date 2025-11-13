@@ -1,0 +1,62 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+% Page setup
+\geometry{margin=1in}
+
+% Code listing style
+\lstset{
+    basicstyle=\ttfamily\small,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=single,
+    rulecolor=\color{black},
+    tabsize=2,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    escapeinside={\%*}{*)},
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!60!black},
+    stringstyle=\color{red!70!black},
+}
+
+\title{An Agentic AI Approach with humans in the loop: Exploring the case of climate education through evidence synthesis - Appendices}
+\author{Mandlenkosi Ngwenya (CSIR), Mandisa Kitunka (DPME) & Nollen Mdhlovu (DPME) }
+\date{07 November 2025}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Appendix A: Examples of Climate Literacy Impact Anchor statements}
+\input{Appendix A.tex}
+
+\newpage
+\section{Appendix B: A list of queries used for querying data}
+\input{Appendix B.tex}
+
+\newpage
+\section{Appendix C: Data extraction prompts}
+\input{Appendix C.tex}
+
+\newpage
+\section{Appendix D: Code and prompts for generating semantic similarity and sentiment analysis heat map}
+\input{Appendix D.tex}
+
+\end{document}

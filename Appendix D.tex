@@ -1,0 +1,65 @@
+% This function processes multiple data fields to determine sentiment and temporal information using LLM-as-a-Judge (through GPT5-mini).
+\begin{lstlisting}[language=Python, numbers=left, basicstyle=\ttfamily]
+import json
+from tqdm import tqdm
+
+def llm_judge_sentiment_temporal(text, field_name):
+    if not text or text.strip().lower() in ["not specified", "none"]:
+      return {"sentiment": "neutral", "timeframe": "present"}
+
+    prompt = f"""
+    You are analyzing text extracted from a climate-related research article.
+    The text is from the **{field_name}** section.
+
+    Determine:
+    1. Sentiment polarity: "positive", "negative", or "neutral"
+    2. Temporal context: "past", "present", or "future"
+
+    Respond strictly in JSON format, for example:
+    {{
+      "sentiment": "positive",
+      "timeframe": "future"
+    }}
+
+    Text: "{text}"
+    """
+
+    try:
+        messages = [{"role": "user", "content": prompt}]
+        response = client.invoke(messages)
+        return response.content.strip()
+    except Exception as e:
+        print(f"Error for {field_name}: {e}")
+        return {"sentiment": "neutral", "timeframe": "present"}
+
+def safe_parse_response(response):
+    """Ensure the LLM result is a dict with 'sentiment' and 'timeframe'."""
+    if isinstance(response, dict):
+        return response
+    if isinstance(response, str):
+        try:
+            # try parsing JSON string
+            return json.loads(response)
+        except Exception:
+            pass
+    # fallback in case of error
+    return {"sentiment": "neutral", "timeframe": "unspecified"}   
+
+fields = ["interventions", "outcomes", "impacts", "time_frames", "future_goals"]
+error_data = []
+for field in tqdm(fields):
+  try:
+
+    print(f"Processing {field}...")
+    results = new_data_df[field].apply(
+        lambda x: safe_parse_response(llm_judge_sentiment_temporal(str(x), field))
+    )
+
+    new_data_df[f"{field}_sentiment"] = results.apply(lambda r: r.get("sentiment", "neutral"))
+    new_data_df[f"{field}_timeframe"] = results.apply(lambda r: r.get("timeframe", "unspecified"))
+
+  except Exception as e:
+    error_data.append({"field": field, "error": str(e), "results": results})
+    print(f"Error for {field}: {e}, results: {results}")
+    continue
+\end{lstlisting}

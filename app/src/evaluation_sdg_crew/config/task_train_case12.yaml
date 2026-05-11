@@ -1,0 +1,9 @@
+projects:
+    name: Gender Inclusive Cities Program
+    location: Quito, Ecuador
+    description: Supported women's groups for gender-responsive urban planning
+    sdg_map:
+        target: SDG 13
+        description: "promoted gender-responsive climate action"
+    impacts:
+    - description: raised awareness and advocated for gender-responsive urban planning

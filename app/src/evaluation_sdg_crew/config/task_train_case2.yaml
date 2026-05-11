@@ -1,0 +1,9 @@
+projects:
+  name: Climate Change Education Project
+  location: New York City, USA
+  description: In New York City, USA, the Climate Change Education Project has integrated climate change into the curriculum of over 600 public schools, reaching over 1.1 million students with learning activities such as school gardens, green roofs, and energy audits.
+  sdg_map:
+    target: SDG 13
+    description: "integrated climate change into the curriculum"
+  impacts:
+    - description: reached over 1.1 million students with learning activities such as school gardens, green roofs, and energy audits

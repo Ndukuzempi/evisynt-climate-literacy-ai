@@ -1,0 +1,65 @@
+reseach_assistant_task:
+  description: >
+    Use the search tool to search for the following queries:
+    1. Climate change education {country}.
+    2. Engagement on global warming {country}.
+    3. Citizen activism on climate change impact {country}.
+    4. {country} climate change awareness campaigns.
+    5. Impact of climate change education {country}.
+    6. Community-based climate change projects {country}.
+    7. Citizen engagement climate change {country}.
+    8. Climate change advocacy {country}.
+    10. Impact of climate change education {country}.
+    11. {country}n civil society climate change engagement.
+  
+    Collect research data, government reports and grey literature (news articles) on each query.
+    If no relevant information is found, say so.
+    Do not MAKE UP unnecessary URLs links, use the URLs found from the internet search tool.
+    Reference information from accurate and reputable sources.
+  expected_output: >
+    List all top 15 results for each query. 
+    Each results should include the search query, title and URL of the article.
+    DO NOT shorten or summarize the list but output all results to output file.
+
+reviewer_task:
+  description: >
+    You screen articles that were collected by the Assistant researcher.
+    Check if results is from {country}, From {country} = Yes or No.
+    Check if results is from {period}, From {period} = Yes or No.
+    Tag the articles as Highly Relevant, Relevant, Irrelevant.
+    Check if the link does not produce 404 results, if it does mark it as invalid otherwise valid.
+    Ensure that articles are not duplicated.
+  expected_output: >
+    compile a list of top 30 most relevant articles. if article not found say 'N/A'.
+    Each entry should include the search query, title and URL of the article.
+    DO not say theere duplicates, but list the duplicates you have found.
+    DO NOT shorten or summarize the results list.
+
+
+sdg_specialist_task:
+  description: >
+    Your tasks are as follows:
+    Search: Use tool to search Citizen engagement initiatives about {sdg_target}, (outside South Africa).
+    Identify educational initiatives about {event_topic}, if you could not find it, say so.
+    Identify awareness campaigns, or training sessions, or educational curriculum about {event_topic} and show information sources, if you could not find it, say so. 
+  expected_output: >
+    Show a list of top 20 list articles with their correct source (URL) about {sdg_target} mapping from other countries.
+
+sector_specialist_task:
+  description: >
+   
+    Sample: """
+        URL: https://unric.org/en/sustainable-infrastructure-a-synergy-between-climate-mitigation-and-economic-growth/
+        Extracted key components:
+        summary: The Olkaria power station in Kenya is a geothermal investment venture created to lessen the nation's dependency on hydropower. According to the World Bank, Olkaria has boosted the share of geothermal energy in Kenya's national energy mix to 51%. Geothermal energy is essential to Kenya's plan for reducing poverty by boosting access to dependable and clean electricity.
+        Project name: Olkaria Power Station
+        Impact: Increased access to dependable and clean electricity
+        Location: Kenya
+    """
+   
+    Extract project name, impact, and location from articles for {country} using provided samples and search tool and sample URL.If you don't find it say 'N/A'.
+    Give a short summary about the research article, also provide a valid URL.    
+    Show the source of the article, valid URLs.
+  expected_output: >
+    A top 20 list of engagements initiatives mapped to {sdg_target}. if article not found say 'N/A'. Please avoid duplicating articles.
+    Include article valid URL.

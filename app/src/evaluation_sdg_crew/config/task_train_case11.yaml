@@ -1,0 +1,9 @@
+projects:
+    name: Solar Systems Installation
+    location: Southern Belize
+    description: Installed solar systems in indigenous communities
+    sdg_map:
+        target: SDG 13
+        description: "avoided 6.5 t of carbon emissions"
+    impacts:
+    - description: powered homes and a primary school

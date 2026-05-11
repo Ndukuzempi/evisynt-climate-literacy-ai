@@ -1,0 +1,47 @@
+reseach_assistant_task:
+  description: >
+    Use the search tool to search the internet using these queries: {queries}. Strictly focus on results from {country}.
+    Your goal is to collect research data, government reports and grey literature (news articles) on citizen engagements in {country}.
+    If no relevant information is found, say so.
+    Do not MAKE UP unnecessary URLs links, use the URLs found from the internet search tool.
+    Reference information from accurate and reputable sources.
+  expected_output: >
+    Compile a list of the top 30 Climate Change Engagements in {country} for the {period}, including project titles and URLs (or N/A with search query) and the number of articles found through search tools.
+
+
+reviewer_task:
+  description: >
+    You only screen data or articles about {event_topic}.
+    Perform critical appraisal of the collected data.
+    Check if the link does not produce 404 results, if it does mark it as invalid otherwise valid.
+    Ensure that articles are not duplicated.
+    You given tools.
+  expected_output: >
+    Top 15 screened articles that focus on {event_topic}. if article not found say 'N/A'.
+
+sdg_specialist_task:
+  description: >
+    Your tasks are as follows:
+    Search: Use tool to search Citizen engagement initiatives about {sdg_target}, (outside South Africa).
+    Identify educational initiatives about {event_topic}, if you could not find it, say so.
+    Identify awareness campaigns, or training sessions, or educational curriculum about {event_topic} and show information sources, if you could not find it, say so. 
+  expected_output: >
+    Show a list of top 10 list articles with their correct source (URL) about {sdg_target} mapping from other countries.
+
+sector_specialist_task:
+  description: >
+   
+    Sample: """
+        URL: https://unric.org/en/sustainable-infrastructure-a-synergy-between-climate-mitigation-and-economic-growth/
+        Extracted key components:
+        summary: The Olkaria power station in Kenya is a geothermal investment venture created to lessen the nation's dependency on hydropower. According to the World Bank, Olkaria has boosted the share of geothermal energy in Kenya's national energy mix to 51%. Geothermal energy is essential to Kenya's plan for reducing poverty by boosting access to dependable and clean electricity.
+        Project name: Olkaria Power Station
+        Impact: Increased access to dependable and clean electricity
+        Location: Kenya
+    """
+   
+    Extract project name, impact, and location from articles for {country} using provided samples and search tool and sample URL.If you don't find it say 'N/A'.
+    Give a short summary about the research article, also provide a valid URL.    
+    Show the source of the article, valid URLs.
+  expected_output: >
+    A top 10 list of engagements initiatives mapped to {sdg_target}. if article not found say 'N/A'. Please avoid duplicating articles.

@@ -1,0 +1,9 @@
+projects:
+    name: Amazonas Originaria
+    location: Puerto Ayacucho
+    description: Women-led project to rehabilitate degraded tropical forest
+    sdg_map:
+        target: SDG 13
+        description: "replanting native trees and promoting sustainable land use"
+    impacts:
+    - description: diversified incomes for community people

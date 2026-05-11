@@ -1,0 +1,61 @@
+reseach_assistant_task:
+  description: >
+    Use the search tool to search the internet using these queries: {queries}. Strictly focus on results from {country}.
+    Your goal is to collect research data, government reports and grey literature (news articles) on citizen engagements in {country}.
+    If no relevant information is found, say so.
+    Do not MAKE UP unnecessary URLs links, use the URLs found from the internet search tool.
+    Reference information from accurate and reputable sources.
+  expected_output: >
+    Compile a list of the all Climate Change Engagements in {country} for the {period} for each of the given queries.
+    Use the following format: """
+      Query 1: query
+      Found Records: #
+      Records:
+      Record No. #
+      Title: title
+      Link: link
+      ************************************************************************************************
+    """
+    Include project titles and URLs (or N/A with search query) and the number of articles found through search tools.
+reviewer_task:
+  description: >
+    You screen articles that were collected by the Assistant researcher.
+    Check if results is from {country}, From {country} = Yes or No.
+    Check if results is from {period}, From {period} = Yes or No.
+    Tag the articles as Highly Relevant, Relevant, Irrelevant.
+    Check if the link does not produce 404 results, if it does mark it as invalid otherwise valid.
+    Ensure that articles are not duplicated.
+  expected_output: >
+    compile a list of top 30 most relevant articles. if article not found say 'N/A'.
+    Each entry should include the search query, title and URL of the article.
+    DO not say there duplicates, but list the duplicates you have found.
+    DO NOT shorten or summarize the results list.
+
+
+sdg_specialist_task:
+  description: >
+    Use tool to search for the following:
+    NDC-SDG Connections for climate action in South Africa.
+    Climate change actitities for awareness in South Africa.
+    National determined contributions for climate change in South Africa.
+  expected_output: >
+    Show a list of top 20 list articles with their correct title and source (URL).
+
+sector_specialist_task:
+  description: >
+   
+    Sample: """
+        URL: https://unric.org/en/sustainable-infrastructure-a-synergy-between-climate-mitigation-and-economic-growth/
+        Extracted key components:
+        summary: The Olkaria power station in Kenya is a geothermal investment venture created to lessen the nation's dependency on hydropower. According to the World Bank, Olkaria has boosted the share of geothermal energy in Kenya's national energy mix to 51%. Geothermal energy is essential to Kenya's plan for reducing poverty by boosting access to dependable and clean electricity.
+        Project name: Olkaria Power Station
+        Impact: Increased access to dependable and clean electricity
+        Location: Kenya
+    """
+   
+    Extract project name, impact, and location from articles for {country} using provided samples and search tool and sample URL.If you don't find it say 'N/A'.
+    Give a short summary about the research article, also provide a valid URL.    
+    Show the source of the article, valid URLs.
+  expected_output: >
+    A top 20 list of engagements initiatives mapped to {sdg_target}. if article not found say 'N/A'. Please avoid duplicating articles.
+    Include article valid URL.

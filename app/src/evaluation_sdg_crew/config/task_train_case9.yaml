@@ -1,0 +1,9 @@
+projects:
+    name: Near-Zero Emissions Coal
+    location: China
+    description: Initiative to address rising greenhouse gas emissions from coal use
+    sdg_map:
+        target: SDG 13
+        description: "cut emissions per unit of power by 85-90%"
+    impacts:
+    - description: reduced anticipated emissions in China by half

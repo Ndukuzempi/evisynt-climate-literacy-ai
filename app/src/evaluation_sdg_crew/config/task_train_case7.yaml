@@ -1,0 +1,9 @@
+projects:
+    name: EU Resource Productivity
+    location: European Union
+    description: Increased resource productivity and energy productivity
+    sdg_map:
+        target: SDG 13
+        description: "increased resource productivity by 1.4%"
+    impacts:
+    - description: reduced gross available energy by 2.6%

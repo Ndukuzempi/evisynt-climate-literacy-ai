@@ -1,0 +1,9 @@
+projects:
+    name: Olkaria Power Station
+    location: Kenya
+    description: Geothermal investment venture to lessen dependency on hydropower
+    sdg_map:
+        target: SDG 13
+        description: "boosted share of geothermal energy in national energy mix"
+    impacts:
+    - description: increased access to dependable and clean electricity

@@ -1,0 +1,9 @@
+projects:
+    name: Ultra Low Emission Zone
+    location: City of London, UK
+    description: Introduced rigorous vehicle emissions requirements
+    sdg_map:
+        target: SDG 13
+        description: "reduced roadside NO2 by 44%"
+    impacts:
+    - description: reduced polluting automobiles by 44,000 per day

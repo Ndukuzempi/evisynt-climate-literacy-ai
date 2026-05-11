@@ -1,0 +1,9 @@
+projects:
+    name: Urban Agriculture Program
+    location: Rosario, Argentina
+    description: Empowers low-income citizens to plant food on public property
+    sdg_map:
+        target: SDG 13
+        description: "reduces urban heat impact and enhances flood resistance"
+    impacts:
+    - description: provides new income source for low-income citizens

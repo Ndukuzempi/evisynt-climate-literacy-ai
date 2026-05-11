@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "evaluation_sdg_crew"
+version = "0.1.0"
+description = ""
+authors = ["Mandlenkosi Ngwenya <ndukuzempi@gmail.com>"]
+license = "Apache Version 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = "^0.41.1" }
+
+[tool.poetry.scripts]
+evaluation_sdg_crew = "evaluation_sdg_crew.main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

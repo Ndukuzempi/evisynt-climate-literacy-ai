@@ -1,0 +1,9 @@
+projects:
+    name: Renewable Energy Sector
+    location: Asia-Pacific region
+    description: Increased employment in renewable energy sector
+    sdg_map:
+        target: SDG 13
+        description: "created new job opportunities in renewable energy"
+    impacts:
+    - description: exceeded losses in traditional energy industries

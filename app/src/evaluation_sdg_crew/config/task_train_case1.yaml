@@ -1,0 +1,10 @@
+projects:
+  name: Slum Networking Project
+  location: India
+  description: In India, the Slum Networking Project has provided basic services such as water supply, sanitation, drainage, solid waste management, street lighting, and paved roads to over 100,000 slum dwellers, while also promoting low-carbon solutions such as biogas plants, solar panels, and rooftop gardens.
+  sdg_map:
+    target: SDG 13
+    description: "low-carbon solutions such as biogas plants, solar panels"
+  impacts:
+    - description: provided basic services such as water supply, sanitation, drainage, solid waste management, street lighting, and paved roads to over 100,000 slum dwellers
+    - description: promoting low-carbon solutions such as biogas plants, solar panels, and rooftop gardens.

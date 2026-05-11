@@ -1,0 +1,65 @@
+reseach_assistant_task:
+  description: >
+    Use the search tool to search the internet using about the following topic {event_topic}. Strictly focus on results from {country}.
+    Your goal is to collect research data and grey literature (news articles) on citizen engagements in {country}.
+    If no relevant information is found, say so.
+    Do not MAKE UP unnecessary URLs links, use the URLs found from the internet search tool.
+    Reference information from accurate and reputable sources.
+  expected_output: >
+    A list of top 30 Climate Change Engagements in {country} that were reported over the {period}, add correct URLs and title of research items, if article not found say 'N/A, but mention search query'.
+    List queries searched with number of found relevant articles per query.
+
+senior_researcher_task:
+  description: >
+    You only screen data or articles about {event_topic}.
+    Perform critical appraisal of the collected data.
+    Check if the link does not produce 404 results, if it does mark it as invalid otherwise valid.
+    You given tools.
+  expected_output: >
+    Top 25 screened articles that focus on {event_topic}. if article not found say 'N/A'.
+
+sdg_specialist_task:
+  description: >
+    Your tasks are as follows:
+    Search: Use tool to search Citizen engagement initiatives about {sdg_target}, (outside South Africa).
+    Identify educational initiatives about {event_topic} show information source through URLs, if you could not find it, say so.
+    Identify awareness campaigns, or training sessions, or educational curriculum about {event_topic} and show information source through URLs, if you could not find it, say so. 
+  expected_output: >
+      A list of articles with their correct source(URL) about {sdg_target}. if article not found say 'N/A'.
+
+sector_specialist_task:
+  description: >
+    Sample extraction: """
+        In Rosario, Argentina, the urban agriculture program empowers low-income citizens to plant food on public property. Over 75ha of transformed land in seven regional farmers markets now provide a new income source, reduces urban heat impact and enhances the city's flood resistance.
+        Extracted key components:
+        Project name: Urban Agriculture Program
+        Impact: Reduces urban heat impact and enhances the city's flood resistance
+        Location: Rosario, Argentina
+    """ 
+     Sample 3: """
+        URL: https://www.wri.org/insights/5-big-ideas-address-climate-crisis-and-inequality-cities
+        Extracted key components:
+        summary: The City of London, UK, in 2019 introduced the first Ultra Low Emission Zone where al drivers are required to adhere to rigorous vehicle emissions requirements or else pay a fee. The fee's proceeds are subsequently reinvested into the city's public transportation infrastructure. In the first 10 months, the strategy resulted in a 44% decrease in roadside NO2 with 44,000 fewer poluting automobiles per day in the city.
+        Project name: Ultra Low Emission Zone
+        Impact: reduced polluting automobiles by 44,000 per day
+        Location: City of London, UK
+        Source: https://www.wri.org/insights/5-big-ideas-address-climate-crisis-and-inequality-cities
+    """
+    """
+     Sample 1: """
+        URL: https://www.wri.org/insights/rosario-urban-farming-tackles-climate-change
+        Extracted key components:
+        summary: In Rosario, Argentina, the urban agriculture program empowers low-income citizens to plant food on public property. Over 75ha of transformed land in seven regional farmers markets now provide a new income source, reduces urban heat impact and enhances the city's flood resistance.
+        Project name: Urban Agriculture Program
+        Impact: Reduces urban heat impact and enhances the city's flood resistance
+        Location: Rosario, Argentina
+        Source: https://www.wri.org/insights/rosario-urban-farming-tackles-climate-change
+
+    """ 
+    """
+    Your task is to use the Sample extraction to extract project  name, impact and loation from from the articles collected for {country} , if you don't find it say 'N/A'.
+    Extract location information from articles, if you don't find it say 'N/A'.
+    Extract impact made by the mentioned project or program or event or identified initiatives in relation to {sdg_target}, if you don't find it say 'N/A'.
+    Give a short summary about the research article, also provide a valid URL.    
+  expected_output: >
+    A top 15 list of engagements initiatives mapped to {sdg_target}. if article not found say 'N/A'.

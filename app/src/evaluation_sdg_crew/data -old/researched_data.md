@@ -1,0 +1,36 @@
+Here is the list of top 30 Climate Change Engagements in South Africa that were reported over the past 3 years:
+
+1. **South Africa - Keep It Cool: climate change education** - VVOB (https://www.vvob.org/en/programmes/south-africa-keep-it-cool-climate-change-education)
+2. **South Africa | Climate change communication and education** (https://education-profiles.org/sub-saharan-africa/south-africa/~climate-change-communication-and-education)
+3. **Climate Policy Engagement in South Africa** - InfluenceMap (https://influencemap.org/report/Climate-Policy-Engagement-in-South-Africa-20575)
+4. **South Africa: Integrating Development and Climate Goals Requires ...** - World Bank (https://www.worldbank.org/en/news/press-release/2022/11/01/south-africa-development-and-climate-goals-can-be-achieved-by-adopting-a-low-carbon-climate-resilient--just-transition)
+5. **South Africa | Climate Action Tracker** (https://climateactiontracker.org/countries/south-africa/)
+6. **How South Africa Can Advance Reforms to Achieve its Climate Goals** - IMF (https://www.imf.org/en/News/Articles/2022/02/21/cf-how-south-africa-can-advance-reforms-to-achieve-its-climate-goals)
+7. **Climate Change In South Africa: 21 Stunning Facts About South ...** - Greenpeace (https://www.greenpeace.org/africa/en/blogs/54171/climate-change-in-south-africa-21-stunning-facts-about-south-africas-climate-breakdown/)
+8. **Climate change makes life harder: in South Africa it's likely to bring ...** - The Conversation (https://theconversation.com/climate-change-makes-life-harder-in-south-africa-its-likely-to-bring-heatwaves-water-stress-and-gender-based-violence-226937)
+9. **South African Climate Change Bill 2023** - Dentons (https://www.dentons.com/en/insights/articles/2024/january/25/south-african-climate-change-bill-2023)
+10. **SOUTH AFRICA - Climate Change Knowledge Portal** - World Bank (https://climateknowledgeportal.worldbank.org/sites/default/files/country-profiles/15932-WB_South%20Africa%20Country%20Profile-WEB.pdf)
+11. **South Africa | Global Climate Change** - Climatelinks (https://www.climatelinks.org/countries/south-africa)
+12. **South African activists demand systemic change for social and ...** - Greenpeace (https://www.greenpeace.org/africa/en/blog/55334/south-african-activists-demand-systemic-change-for-social-and-climate-justice/)
+13. **South Africa Climate Change Country Profile** - USAID (https://www.usaid.gov/climate/country-profiles/south-africa)
+14. **5 Incredible Young South Africans Who Are Taking Climate Change ...** - Global Citizen (https://www.globalcitizen.org/en/content/amazing-young-south-africans-fight-climate-change/)
+15. **Vanessa Nakate Bigger Picture: Climate Justice in Africa** - TIME (https://time.com/6109452/vanessa-nakate-climate-justice/)
+16. **The Social and Economic Effects of Climate Change in Africa** - Wilson Center (https://www.wilsoncenter.org/blog-post/social-and-economic-effects-climate-change-africa)
+17. **Why climate action must include women's voices** - CER (https://cer.org.za/news/why-climate-action-must-include-womens-voices-2)
+18. **12 climate activists inspiring us to fight climate change** - Rescue (https://www.rescue.org/uk/article/12-climate-activists-inspiring-us-fight-climate-change)
+19. **African cities can become beacons of climate resilience and prosperity** - WEF (https://www.weforum.org/agenda/2024/04/african-cities-climate-change-resilience/)
+20. **Young climate activists demand action and inspire hope** - UNICEF (https://www.unicef.org/stories/young-climate-activists-demand-action-inspire-hope)
+21. **Climate Action Network** (https://climatenetwork.org/)
+22. **Climate Change Campaign** - Earthlife Africa (https://earthlife.org.za/campaign-climate-change/)
+23. **Communications and Outreach** - Presidential climate commission (https://www.climatecommission.org.za/communications-and-outreach)
+24. **SA Climate Change Champs** (https://saclimatechamps.co.za/)
+25. **Africa** - The Climate Reality Project (https://www.climaterealityproject.org/branch/africa)
+26. **Environment** - USAID (https://www.usaid.gov/south-africa/environment)
+27. **Trees for Homes** - UNFCCC (https://unfccc.int/climate-action/momentum-for-change/activity-database/momentum-for-change-trees-for-homes)
+28. **Climate change knowledge in South Africa on the rise** - HSRC (https://hsrc.ac.za/news/capable-and-ethical-state/climate-change-knowledge-in-south-africa-on-the-rise/)
+29. **Wits rolls out Save Our Resources campaign** - Wits University (https://www.wits.ac.za/news/latest-news/general-news/2023/2023-05/wits-rolls-out-save-our-resources-campaign.html)
+30. **Awareness of climate change remains low in South Africa, new ...** - Afrobarometer (https://www.afrobarometer.org/articles/awareness-of-climate-change-remains-low-in-south-africa-new-afrobarometer-study-shows/)
+
+Total count of articles found from search tools: 30
+
+Note: The list only includes articles that are relevant to citizen engagements and events on climate change in South Africa, and excludes articles that are not relevant or are duplicates.
